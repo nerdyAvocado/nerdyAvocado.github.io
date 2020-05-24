@@ -1,0 +1,10 @@
+---
+layout: default
+title: Resources
+---
+	<h1>{{ page.title }}</h1>
+	<ul class="resources">
+		{% for item in site.data.resources %}
+        <li><a href="{{ item.link }}">{{ item.name }}</a></li>
+  		{% endfor %}
+	</ul>

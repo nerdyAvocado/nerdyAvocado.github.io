@@ -1,0 +1,97 @@
+@import "colors";
+@import "fonts";
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $background-color;
+    font-family: $body-font;
+}
+
+.container {
+    margin: 30px auto;
+    max-width: 800px;
+    padding: 0 20px;    
+}
+
+nav ul {
+    font-family: $header-font;
+    padding: 0px;
+    list-style: none;
+    font-weight: bold;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    .active {
+        color: $primary-color;
+    }
+}
+
+footer p {
+    font-family: $header-font;
+    padding: 0px;
+    font-size: 1em;
+    font-weight: bold;
+    .active {
+        color: $primary-color;
+    }
+    .fa {
+        font-size: 1.5em;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $secondary-color;
+    transition: 0.2s all;
+}
+
+a:hover {
+    text-decoration: none;
+    color: $primary-color;
+}
+
+h1 {
+    font-size: 3em;
+    font-family:$header-font;
+    color: $primary-color;
+}
+
+h2 {
+    font-size: 2em;
+    font-family: $header-font;
+    color: $secondary-color;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1em;
+    color: $base-text-color;
+}
+footer {
+    border-top: 1px solid #d5d5d5;
+    font-size: .8em;
+}
+
+footer a {
+    text-decoration: none;
+    color: #999;
+    transition: 0.2s all;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: $secondary-color;
+}
+
+ul.posts, ul.resources { 
+    margin: 20px auto 40px; 
+    font-size: 1.25em;
+}
+
+ul.posts li, ul.resources li {
+    list-style: none;
+    color: $contrast-color;
+}

@@ -3,26 +3,21 @@
 		<head>
 			<title>{{ page.title }}</title>
 			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/css/main.css">
+			<link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
+			<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
 		</head>
 		<body>
-			<nav>
-	    		<ul>
-	        		<li><a href="/">Home</a></li>
-		        	<li><a href="/about">About</a></li>
-	        		<li><a href="/cv">CV</a></li>
-	        		<li><a href="/blog">Blog</a></li>
-	    		</ul>
-			</nav>
 			<div class="container">
-			
-			{{ content }}
-			
+				{% include navigation.html %}
+				
+				{{ content }}
+				
+				<footer>
+		    		<p><a href="https://twitter.com/AmyBoslam?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @AmyBoslam</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+	        		<p><a href="https://github.com/nerdyAvocado"><i class="fa fa-github"></i> nerdyAvocado</a></p>
+				</footer>
 			</div><!-- /.container -->
-			<footer>
-	    		<ul>
-	        		<li><a href="https://github.com/nerdyAvocado">github.com/nerdyAvocado</a></li>
-				</ul>
-			</footer>
 		</body>
 	</html>
