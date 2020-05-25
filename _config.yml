@@ -1,3 +1,6 @@
 name: Amy Boslam
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
+
+# Google Analytics
+google_analytics: UA-167549576-1
