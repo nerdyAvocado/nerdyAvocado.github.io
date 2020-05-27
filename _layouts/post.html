@@ -2,8 +2,31 @@
 layout: default
 ---
 <h1>{{ page.title }}</h1>
-<p class="meta">{{ page.date | date_to_string }}</p>
-
+<h2>{{ page.subtitle }}</h2>
+<div class="metadata">
+	<div class="metadata__row">
+		<div class="metadata__row-icon"><i class="fa fa-calendar"></i></div>
+		<div class="metadata__row-text post-date">Published on: {{ page.date | date_to_string }}</div>
+	</div>
+	{% if page.updated_on %}
+	<div class="metadata__row">
+		<div class="metadata__row-icon"><i class="fa fa-calendar"></i></div>
+		<div class="metadata__row-text post-date">Last updated: {{ page.updated_on | date_to_string }}</div>
+	</div>
+	{% endif %}
+	<div class="metadata__row reading-time">
+		<div class="metadata__row-icon "><i class="fa fa-clock-o"></i></div>
+		<div class="metadata__row-text" title="Estimated read time">
+		  {% assign word_count = content | number_of_words %}
+		  <b>Reading time: </b>
+		  {% if word_count < 360 %}
+		    1 min
+		  {% else %}
+		    {{ word_count | divided_by:180 }} mins
+		  {% endif %}
+		</div>
+	</div>
+</div>
 <div class="post">
   {{ content }}
 </div>

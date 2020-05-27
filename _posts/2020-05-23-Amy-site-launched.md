@@ -1,9 +1,17 @@
 ---
 layout: post
 title: "What happens when a Backend Engineer wants their own website..."
+subtitle: "Beginner-friendly resources for building a blog"
 date: 2020-05-23
+updated_on: 2020-05-27
 ---
 
-I've only ever really worked on backend code, so this site itself is the closest to web development that I've ever gotten! It's built using [Jekyll](http://jekyllrb.com), following Jonathan McGlone's tutorial [A Guide to Creating and Hosting a Personal Website on GitHub](http://jmcglone.com/guides/github-pages/).
+I've only ever really worked on backend code, so this site itself is the closest to web development that I've ever gotten! That means I only had a very rudimentary understanding of HTML when I started, and had never really looked at any CSS before. I'm using this post to keep a record of the useful, beginner-friendly resources I've come across when working on the site.
 
-Hopefully it'll look a bit nicer once I've spent more than 15 minutes looking at CSS...
+The site is built using [Jekyll](http://jekyllrb.com). To get started, I followed Jonathan McGlone's tutorial [A Guide to Creating and Hosting a Personal Website on GitHub](http://jmcglone.com/guides/github-pages/).
+
+I picked the colours for my site using the colour palettes on [Coolors](https://coolors.co).
+
+I used this tutorial to add a reading time to my blog posts, [Carlos Becker - Jekyll: Reading time without plugins](https://carlosbecker.com/posts/jekyll-reading-time-without-plugins).
+
+The [Flexbox Froggy](https://flexboxfroggy.com/) game is a concise introduction to the flexbox syntax in CSS. I used Flexbox to make the css for my blog post index page easier to work with.
