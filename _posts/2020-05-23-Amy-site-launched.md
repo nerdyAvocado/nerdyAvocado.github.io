@@ -2,6 +2,7 @@
 layout: post
 title: "What happens when a Backend Engineer wants their own website..."
 subtitle: "Beginner-friendly resources for building a blog"
+tags: Beginner-Friendly Blog-Resources
 date: 2020-05-23
 updated_on: 2020-05-27
 ---
@@ -15,3 +16,5 @@ I picked the colours for my site using the colour palettes on [Coolors](https://
 I used this tutorial to add a reading time to my blog posts, [Carlos Becker - Jekyll: Reading time without plugins](https://carlosbecker.com/posts/jekyll-reading-time-without-plugins).
 
 The [Flexbox Froggy](https://flexboxfroggy.com/) game is a concise introduction to the flexbox syntax in CSS. I used Flexbox to make the css for my blog post index page easier to work with.
+
+I implemented a tagging system for my posts, based on Long Qian's post on (Jekyll Tags on Github Pages)[https://longqian.me/2017/02/09/github-jekyll-tag/].

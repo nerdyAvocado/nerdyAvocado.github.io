@@ -3,14 +3,21 @@ layout: default
 title: Amy Boslam's Blog
 ---
 	<h1>{{ page.title }}</h1>
-	<div class="postlist">
-	  {% for post in site.posts %}
-	    <div class="postlisting">
-	    	<span class="postlisting__date">{{ post.date | date_to_string }}</span>
-	    	<a href="{{ post.url }}" title="{{ post.title }}" class="postlisting__title">
-	    		{{ post.title }}<br/>
-	    		<span class="postlisting__detail">{{ post.subtitle }}</span>
-	    	</a>
-	    </div>
-	  {% endfor %}
+	<div class="bloglisting__body" >
+		<div class="postlist">
+		  {% for post in site.posts %}
+		    <div class="postlisting">
+		    	<div class="postlisting__date">{{ post.date | date_to_string }}</div>
+		    	<a href="{{ post.url }}" title="{{ post.title }}" class="postlisting__title">
+		    		{{ post.title }}<br/>
+		    		<div class="postlisting__detail">{{ post.subtitle }}</div>
+		    	</a>
+		    </div>
+		  {% endfor %}
+		</div>
+		<div class="sidebar">
+			{% for tag in site.tags %}
+                <a href="/blog/tags/{{ tag[0] | downcase }}/"><div class="tag"><i class="fa fa-times" aria-hidden="true"></i> {{ tag[0] }}</div></a>
+  		    {% endfor %}
+		</div>
 	</div>
