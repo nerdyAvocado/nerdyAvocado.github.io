@@ -1,0 +1,12 @@
+#/bin/sh
+
+# Run the python script to check for any un-generated tag pages
+echo "Running tag autogenerator"
+./generate_tag_index.py
+
+if [[ $? -ne 0 ]]
+then
+echo "Created new tag index files."
+echo "Aborting commit."
+    exit 1
+fi
