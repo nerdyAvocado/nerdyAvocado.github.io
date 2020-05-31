@@ -11,6 +11,7 @@ tags_pattern = r"tags: ([\w\-]+(?: +[\w\-]+)*)"
 tag_file_template = """---
 layout: tagpage
 tag: %s
+title: Amy Boslam's Blog
 permalink: /blog/tags/%s/
 ---
 """
