@@ -11,6 +11,7 @@ tags_pattern = r"tags: ([\w\-]+(?: +[\w\-]+)*)"
 tag_file_template = """---
 layout: tagpage
 tag: %s
+permalink: /blog/tags/%s/
 ---
 """
 
@@ -39,7 +40,7 @@ try:
             rc = 1
             print(tag_filename)
             with open(tag_filename, 'w') as f:
-                f.write(tag_file_template % tag)
+                f.write(tag_file_template % (tag,tag.lower()))
 except FileNotFoundError:
     print("Could not find tags directory.")
 
