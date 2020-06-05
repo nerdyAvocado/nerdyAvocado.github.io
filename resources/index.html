@@ -2,9 +2,21 @@
 layout: default
 title: Resources
 ---
-	<h1>{{ page.title }}</h1>
-	<ul class="resources">
-		{% for item in site.data.resources %}
-        <li><a href="{{ item.link }}">{{ item.name }}</a></li>
-  		{% endfor %}
-	</ul>
+<div class="resources">
+    <div class="resources__title">
+        <h1>{{ page.title }}</h1>
+    </div>
+    <div class="resources__body">
+        {% for section in site.data.resources.sections %}
+            <div class="resources__section">
+                <div class="resources__section__header">    <h2>{{ section.name }}</h2>
+                </div>
+                {% for item in section.items %}
+                <div class="resources__item">
+                    <a href="{{ item.link }}" class="resources__item__link">{{ item.name }}:</a> {{ item.description }}
+                </div>
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
+</div>

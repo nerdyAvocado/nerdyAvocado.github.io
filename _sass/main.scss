@@ -204,3 +204,46 @@ ul.posts li, ul.resources li {
     }
 }
 
+.blurb {
+    display: flex;
+    flex-direction: column;
+    .blurb__title {
+    }
+
+    .blurb__subtitle {
+        margin-top: 15px;
+    }
+
+    .blurb__body {
+        padding: 5px 0;
+    }
+}
+
+.resources {
+    display: flex;
+    flex-direction: column;
+    .resources__title {
+    }
+
+    .resources__body {
+
+        .resources__section {
+            padding: 5px 0 10px 0;
+
+            .resources__section__header{
+                margin: 10px;
+                h2 {
+                    color: $contrast-color;
+                }
+            }
+
+            .resources__item {
+                padding: 3px;
+                .resources__item__link {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+

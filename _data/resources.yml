@@ -1,2 +1,9 @@
-- name: HTTP Cats
-  link: https://http.cat
+sections:
+  - name: Miscellaneous
+    items:
+    - name: HTTP Cats
+      description: List of HTTP Status Codes, each with a description and a relevant cat picture
+      link: https://http.cat
+    - name: Ryan's Tutorials - Linux Tutorials
+      description: Introduction to Linux Command Line and Bash scripting
+      link: https://ryanstutorials.net/linuxtutorial/
