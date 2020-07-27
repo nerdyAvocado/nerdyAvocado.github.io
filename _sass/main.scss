@@ -69,6 +69,14 @@ h2 {
     margin: 0;
 }
 
+h4 {
+    font-size: 1em;
+    font-family: $header-font;
+    color: $contrast-color;
+    padding: 0;
+    margin: 10px 0;
+}
+
 .separator {
     background-color: $secondary-color;
     width: auto;
@@ -247,3 +255,11 @@ ul.posts li, ul.resources li {
     }
 }
 
+.post {
+    img {
+        display: block;
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}

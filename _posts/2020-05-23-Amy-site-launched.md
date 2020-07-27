@@ -17,4 +17,4 @@ I used this tutorial to add a reading time to my blog posts, [Carlos Becker - Je
 
 The [Flexbox Froggy](https://flexboxfroggy.com/) game is a concise introduction to the flexbox syntax in CSS. I used Flexbox to make the css for my blog post index page easier to work with.
 
-I implemented a tagging system for my posts, based on Long Qian's post on (Jekyll Tags on Github Pages)[https://longqian.me/2017/02/09/github-jekyll-tag/].
+I implemented a tagging system for my posts, based on Long Qian's post on [Jekyll Tags on Github Pages](https://longqian.me/2017/02/09/github-jekyll-tag/).
