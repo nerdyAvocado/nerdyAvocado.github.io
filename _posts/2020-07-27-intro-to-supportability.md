@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "An Introduction to Software Supportability"
+subtitle: "How to make sure future-you can actually fix the bugs"
 tags: Supportability
 date: 2020-07-27
 ---
@@ -9,10 +10,10 @@ date: 2020-07-27
 
 My job as an L3 Engineer means I work on supporting, diagnosing problems with, and making bug-fixes for a product. Given that, I'm particularly invested in ensuring that our product is supportable and backed by a maintainable codebase - but what does that mean? 
 
-*When there's a bug in your software, are you confident you'd be able to track down the cause and fix it?  
+> When there's a bug in your software, are you confident you'd be able to track down the cause and fix it?  
 Is it easy to add new features to your code?    
 Would you feel confident that you'd be able to restore service on your product if it failed in a critical deployment?    
-Is there documentation covering all of the networking requirements for your product, and is the documentation customer-friendly?*
+Is there documentation covering all of the networking requirements for your product, and is the documentation customer-friendly?
 
 These are some questions that you could ask yourself if you were evaluating the supportability of your product - would you be able to answer them? Knowing what makes a product supportable is one of the things that you can use to build up a well-rounded insight into the lifecycle of a software product! At a code-level, a big part of supportability is having developers who produce maintainable code, so I've covered some basic points that you can apply to the code that you write.
 
@@ -20,7 +21,7 @@ These are some questions that you could ask yourself if you were evaluating the 
 
 According to [Wikipedia](https://en.wikipedia.org/wiki/Serviceability_(computer)), Supportability is:
 
-***"The ability of technical support personnel to install, configure and monitor computer products, identify exceptions or faults, debug or isolate faults to root cause analysis, and provide hardware or software maintenance in pursuit of solving a problem and restore the product into service".***
+> "The ability of technical support personnel to install, configure and monitor computer products, identify exceptions or faults, debug or isolate faults to root cause analysis, and provide hardware or software maintenance in pursuit of solving a problem and restore the product into service".
 
 So that's the "dictionary definition", but what can make a product meet those requirements? And why is it important?
 
@@ -50,7 +51,7 @@ The final thing I'd highlight in a supportable product would be that it should h
 
 The most immediate supportability impact you can have when writing code for a product is to ensure that the code is maintainable. Maintainability can be defined as:
 
-***"The ease with which a software system or component can be modified to correct faults, improve performance or other attributes, or adapt to a changed environment"***. 
+> "The ease with which a software system or component can be modified to correct faults, improve performance or other attributes, or adapt to a changed environment" 
 
 In my experience, maintainable code is easy to read, provides a well-defined function, and is well documented.
 

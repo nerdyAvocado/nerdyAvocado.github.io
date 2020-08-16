@@ -18,7 +18,7 @@ layout: default
         </div>
         <div class="sidebar">
             {% for tag in site.tags %}
-                <a href="/blog/tags/{{ tag[0] | downcase }}/"><div class="tag {% if page.tag == tag[0] %}active{% endif %}"><i class="fa fa-times" aria-hidden="true"></i> {{ tag[0] }} </div></a>
+                <a href="/blog/tags/{{ tag[0] | downcase }}/"><div class="tag {% if page.tag == tag[0] %}active{% endif %}"><i class="fa fa-tag" aria-hidden="true"></i> {{ tag[0] }} </div></a>
               {% endfor %}
         </div>
     </div>
